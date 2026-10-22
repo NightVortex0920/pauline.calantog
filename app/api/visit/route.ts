@@ -3,8 +3,6 @@ import { Resend } from "resend";
 import { headers } from "next/headers";
 import { isIP } from "node:net";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 function getClientIp(headerValues: Headers) {
   const forwardedFor = headerValues.get("x-forwarded-for");
   const candidate =
@@ -70,14 +68,17 @@ export async function POST(request: Request) {
       typeof body?.timezone === "string" ? body.timezone.slice(0, 100) : null;
     const userAgent = requestHeaders.get("user-agent")?.slice(0, 500) || null;
 
+    const apiKey = process.env.RESEND_API_KEY;
     const toEmail = process.env.CONTACT_EMAIL;
 
-    if (!process.env.RESEND_API_KEY || !toEmail) {
+    if (!apiKey || !toEmail) {
       return NextResponse.json(
         { error: "Email configuration is missing." },
         { status: 500 },
       );
     }
+
+    const resend = new Resend(apiKey);
 
     let location = fallbackLocation;
 
