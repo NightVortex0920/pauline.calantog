@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Heart, ArrowUp, Github, Mail, Code2 } from "lucide-react";
+import { Heart, ArrowUp, Github, Mail, Code2, Send, MessageCircle } from "lucide-react";
+import { FaReddit } from "react-icons/fa";
 
 const footerLinks = [
   { name: "Home", href: "#home" },
@@ -90,6 +91,24 @@ export default function Footer() {
               <Github size={20} />
             </motion.a>
             <motion.a
+              href="https://t.me/fashion525"
+              className="p-2 text-gray-500 hover:text-primary-400 transition-colors"
+              whileHover={{ scale: 1.1, rotate: -5 }}
+              whileTap={{ scale: 0.9 }}
+              aria-label="Email"
+            >
+              <Send size={20} />
+            </motion.a>
+            <motion.a
+              href="https://wa.me/639309632136"
+              className="p-2 text-gray-500 hover:text-primary-400 transition-colors"
+              whileHover={{ scale: 1.1, rotate: -5 }}
+              whileTap={{ scale: 0.9 }}
+              aria-label="Email"
+            >
+              <MessageCircle size={20} />
+            </motion.a>
+            <motion.a
               href="mailto:paucalantog07@gmail.com"
               className="p-2 text-gray-500 hover:text-primary-400 transition-colors"
               whileHover={{ scale: 1.1, rotate: -5 }}
@@ -97,6 +116,15 @@ export default function Footer() {
               aria-label="Email"
             >
               <Mail size={20} />
+            </motion.a>
+            <motion.a
+              href="https://www.reddit.com/user/Pauline_Calantog"
+              className="p-2 text-gray-500 hover:text-primary-400 transition-colors"
+              whileHover={{ scale: 1.1, rotate: -5 }}
+              whileTap={{ scale: 0.9 }}
+              aria-label="Email"
+            >
+              <FaReddit size={20} />
             </motion.a>
             <motion.button
               onClick={scrollToTop}

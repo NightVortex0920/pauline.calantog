@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Github, Mail, Sparkles } from "lucide-react";
+import { Menu, X, Github, Mail, Sparkles,MessageCircle, Send } from "lucide-react";
+import { FaReddit } from "react-icons/fa";
 import IconWrapper from "./IconWrapper";
 
 const navLinks = [
@@ -46,11 +47,10 @@ export default function Navbar() {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-dark-300/80 backdrop-blur-xl border-b border-white/5"
-          : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
+        ? "bg-dark-300/80 backdrop-blur-xl border-b border-white/5"
+        : "bg-transparent"
+        }`}
     >
       <div className="container-custom">
         <div className="flex items-center justify-between h-20">
@@ -79,11 +79,10 @@ export default function Navbar() {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className={`relative px-4 py-2 text-sm font-medium font-display transition-colors ${
-                  activeSection === link.href.substring(1)
-                    ? "text-white"
-                    : "text-gray-400 hover:text-white"
-                }`}
+                className={`relative px-4 py-2 text-sm font-medium font-display transition-colors ${activeSection === link.href.substring(1)
+                  ? "text-white"
+                  : "text-gray-400 hover:text-white"
+                  }`}
               >
                 {link.name}
                 {activeSection === link.href.substring(1) && (
@@ -121,6 +120,39 @@ export default function Navbar() {
             >
               <IconWrapper>
                 <Mail size={20} />
+              </IconWrapper>
+            </motion.a>
+            <motion.a
+              href="https://t.me/fasjhion525"
+              className="p-2 text-gray-400 hover:text-primary-400 transition-colors"
+              whileHover={{ scale: 1.1, rotate: -5 }}
+              whileTap={{ scale: 0.9 }}
+              aria-label="Email"
+            >
+              <IconWrapper>
+                <Send size={20} />
+              </IconWrapper>
+            </motion.a>
+            <motion.a
+              href="https://wa.me/639309632136"
+              className="p-2 text-gray-400 hover:text-primary-400 transition-colors"
+              whileHover={{ scale: 1.1, rotate: -5 }}
+              whileTap={{ scale: 0.9 }}
+              aria-label="Email"
+            >
+              <IconWrapper>
+                <MessageCircle size={20} />
+              </IconWrapper>
+            </motion.a>
+            <motion.a
+              href="https://www.reddit.com/user/Pauline_Calantog"
+              className="p-2 text-gray-400 hover:text-primary-400 transition-colors"
+              whileHover={{ scale: 1.1, rotate: -5 }}
+              whileTap={{ scale: 0.9 }}
+              aria-label="Email"
+            >
+              <IconWrapper>
+                <FaReddit size={20} />
               </IconWrapper>
             </motion.a>
             <motion.a
@@ -198,11 +230,10 @@ export default function Navbar() {
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: -20 }}
                     transition={{ delay: index * 0.05 }}
-                    className={`px-4 py-3 rounded-lg font-display transition-colors ${
-                      activeSection === link.href.substring(1)
-                        ? "bg-primary-500/10 text-primary-400"
-                        : "text-gray-400 hover:text-white hover:bg-white/5"
-                    }`}
+                    className={`px-4 py-3 rounded-lg font-display transition-colors ${activeSection === link.href.substring(1)
+                      ? "bg-primary-500/10 text-primary-400"
+                      : "text-gray-400 hover:text-white hover:bg-white/5"
+                      }`}
                   >
                     {link.name}
                   </motion.a>
@@ -228,6 +259,30 @@ export default function Navbar() {
                   >
                     <IconWrapper>
                       <Mail size={20} />
+                    </IconWrapper>
+                  </a>
+                  <a
+                    href="https://t.me/fashion525"
+                    className="p-2 text-gray-500 hover:text-primary-400 transition-colors"
+                  >
+                    <IconWrapper>
+                      <Send size={20} />
+                    </IconWrapper>
+                  </a>
+                  <a
+                    href="https://wa.me/639309632136"
+                    className="p-2 text-gray-500 hover:text-primary-400 transition-colors"
+                  >
+                    <IconWrapper>
+                      <MessageCircle size={20} />
+                    </IconWrapper>
+                  </a>
+                  <a
+                    href="https://www.reddit.com/user/Pauline_Calantog"
+                    className="p-2 text-gray-400 hover:text-primary-400 transition-colors"
+                  >
+                    <IconWrapper>
+                      <FaReddit size={20} />
                     </IconWrapper>
                   </a>
                 </motion.div>

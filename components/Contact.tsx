@@ -15,7 +15,10 @@ import {
   Sparkles,
   ArrowRight,
 } from "lucide-react";
-import type { LucideIcon } from "lucide-react";
+import { FaReddit } from "react-icons/fa";
+import type { ComponentType } from "react";
+
+type ContactIcon = ComponentType<{ size?: number | string; className?: string }>;
 
 type ContactInfo = {
   label: string;
@@ -23,7 +26,7 @@ type ContactInfo = {
   href: string | null;
   color: string;
 } & (
-  | { icon: LucideIcon; iconImage?: never }
+  | { icon: ContactIcon; iconImage?: never }
   | { icon?: never; iconImage: string }
 );
 
@@ -54,6 +57,13 @@ const contactInfo: ContactInfo[] = [
     label: "WhatsApp",
     href: "https://wa.me/639309632136",
     value: "+63 997 278 0244",
+    color: "#25D366",
+  },
+  {
+    icon: FaReddit,
+    label: "Reddit",
+    href: "https://www.reddit.com/user/Pauline_Calantog",
+    value: "Pauline Calantog",
     color: "#25D366",
   },
 ];
