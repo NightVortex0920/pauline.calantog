@@ -51,7 +51,7 @@ const projects: Project[] = [
       "/projects/Full-Ecommerce-Site5.png",
     ],
     category: "Web",
-    githubUrl: "https://github.com/MaxCode917/Full-Ecommerce-Site",
+    githubUrl: "https://github.com/Maxcode0917/Full-Ecommerce-Site",
   },
 
   {
@@ -286,7 +286,7 @@ const projects: Project[] = [
       "Developed TitanBot, a feature-rich Discord bot using Discord.js v14 and PostgreSQL, integrating advanced moderation, economy systems, ticket management, reaction roles, XP leveling, giveaways, birthday tracking, and automated welcome messages. Implemented server statistics, utility commands, user reporting, and interactive multi-platform music controls. Designed for scalability and reliable data persistence, TitanBot streamlines server administration, automates community management, and enhances member engagement through a modular, all-in-one solution.",
     technologies: ["JavaScript", "PostgreSQL", "Docker", "Discord.js"],
     images: ["/projects/TitanBot Discord Showcase.png"],
-    githubUrl: "https://github.com/MaxCode917/TitanBot",
+    githubUrl: "https://github.com/Maxcode0917/TitanBot",
     category: "Automation",
   },
   {
@@ -295,7 +295,7 @@ const projects: Project[] = [
       "Developed a feature-rich Telegram e-commerce bot with PostgreSQL, Redis, and asynchronous Python, integrating product catalogs, inventory management, shopping carts, promo codes, restock notifications, and automated checkout. Implemented CryptoPay, Telegram Stars, and fiat payment integrations, alongside reviews, referrals, and granular role-based access control. Built an administrative web panel with analytics, CSV exports, audit logs, and user management. Strengthened security with transactional payments, duplicate-payment protection, rate limiting, and database-level safeguards, delivering a scalable, high-performance commerce platform with English and Russian localization.",
     technologies: ["Redis", "Python", "Payment", "SQL", "Telegram Bot API"],
     images: ["/projects/admin_pov.gif", "/projects/user_pov.gif"],
-    githubUrl: "https://github.com/MaxCode917/Telegram-shop",
+    githubUrl: "https://github.com/Maxcode0917/Telegram-shop",
     category: "Automation",
   },
   {
@@ -309,7 +309,7 @@ const projects: Project[] = [
       "Visualization",
     ],
     images: ["/projects/Ultimate WhatsApp Bot.png"],
-    githubUrl: "https://github.com/MaxCode917/Flash-Md-V3",
+    githubUrl: "https://github.com/Maxcode0917/Flash-Md-V3",
     category: "Automation",
   },
   {
@@ -323,7 +323,7 @@ const projects: Project[] = [
       "Web Scraping",
     ],
     images: ["/projects/anti.png"],
-    githubUrl: "https://github.com/MaxCode917/web-scraping-examples",
+    githubUrl: "https://github.com/Maxcode0917/web-scraping-examples",
     category: "Automation",
   },
 ];
@@ -596,7 +596,7 @@ export default function Projects() {
           transition={{ delay: 0.5 }}
         >
           <motion.a
-            href="https://github.com/MaxCode917"
+            href="https://github.com/Maxcode0917"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-8 py-4 bg-dark-100/50 border border-white/10 rounded-xl text-gray-400 hover:text-white hover:border-primary-500/50 transition-all duration-300 group relative overflow-hidden"

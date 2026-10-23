@@ -34,8 +34,8 @@ const contactInfo: ContactInfo[] = [
   {
     icon: Github,
     label: "GitHub",
-    href: "https://github.com/MaxCode917",
-    value: "MaxCode917",
+    href: "https://github.com/Maxcode0917",
+    value: "Maxcode0917",
     color: "#1506eb",
   },
   {
@@ -72,7 +72,7 @@ const socialLinks = [
   {
     icon: Github,
     label: "GitHub",
-    href: "https://github.com/MaxCode917",
+    href: "https://github.com/Maxcode0917",
     color: "#ffffff",
   },
   {

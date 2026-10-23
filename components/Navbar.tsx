@@ -99,7 +99,7 @@ export default function Navbar() {
           {/* Social Links & CTA */}
           <div className="hidden md:flex items-center gap-4">
             <motion.a
-              href="https://github.com/MaxCode917"
+              href="https://github.com/Maxcode0917"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-gray-400 hover:text-primary-400 transition-colors"
@@ -244,7 +244,7 @@ export default function Navbar() {
                   className="flex items-center gap-4 px-4 pt-4 mt-2 border-t border-white/10"
                 >
                   <a
-                    href="https://github.com/MaxCode917"
+                    href="https://github.com/Maxcode0917"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 text-gray-400 hover:text-primary-400 transition-colors"

@@ -80,7 +80,7 @@ export default function Footer() {
             className="flex items-center gap-4"
           >
             <motion.a
-              href="https://github.com/MaxCode917"
+              href="https://github.com/Maxcode0917"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-gray-500 hover:text-primary-400 transition-colors"
